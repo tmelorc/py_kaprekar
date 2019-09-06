@@ -15,7 +15,7 @@ def do_trick(num):
         quit()
 
     ascending = np.sort(digits)
-    descending = np.flip(ascending, 0)
+    descending = ascending[::-1] # np.flip(ascending, 0)
 
     a = sum(descending[:] * 10 ** np.arange(n)[:])
     b = sum(ascending[:] * 10 ** np.arange(n)[:])
